@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    
+    
+}
+
+.navegação {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+span {
+    color: black;
+}
+
+.nav-list {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-item {
+    color: black;
+    font-size: 1.1rem;
+    
+
+    &:hover { font-weight: 600;
+        color: red;
+    }
+}
+
+.nav-list i {
+    font-size: 1.1rem;
+    cursor: pointer;
+
+
+    &:hover {
+        color: brown;
+    }
+}
+
+#botão-hamburguer {
+    display: none;
+    font-size: 2rem;
+}
+
+.home {
+  display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    max-width: 1400px; 
+    margin: 0 auto; 
+}
+
+
+.home-text {
+   width: 50%; 
+    max-width: none; 
+    padding-left: 5%; 
+   
+
+
+}
+
+.home-image {
+  
+    width: 50%;
+    margin-left: 10rem;
+}
+
+.home-image img{
+    width: 100%;
+    padding: 5%;
+}
+
+.home-text h4 {
+    font-size: 1.1rem;
+    color: red;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.home-text h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: red;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.home-text p {
+    margin-bottom: 4rem;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.home-text a { background-color: red;
+color: #fff;
+padding: 1rem;
+font-weight: 600;
+border-radius: 50px;
+margin-left: 80px;
+text-align: center;}
+
+
+
+footer {
+    background-color: #F02B15;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+
+
+}
+
+.sobre {
+    width: 50%;
+    border: 1px solid #FFF;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 2rem;
+    color: #000000;
+}
+
+.sobre p {
+    text-align: justify;
+    margin-top: 2rem;
+    line-height: 2rem;
+   
+    height: 30vh;
+    padding: 20px;
+}
+.termos {
+    margin-right:15%;
+}
+
+.termos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+
+}
+
+.termos a {
+    color: #000000;
+    font-weight: 500;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        overflow: none;
+        height: 0;
+    }
+
+    .navegação {
+        flex-direction: column;
+        gap: 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+        .nav-list {
+            display:none;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+          
+
+        }
+
+        .nav-list.active {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        
+
+        #botão-hamburguer {
+            display: block;
+            cursor: pointer;
+
+        }
+
+        .logo {
+            font-size: 2rem;
+        }
+
+        .home {
+            flex-direction: column;
+            overflow: none;
+            margin-top: 5rem;
+        }
+
+        .home-text {
+            width: 100%;
+            align-items: center;
+            
+        }
+
+        .home-image {
+            width: 100%;
+            margin-top: 5rem;
+            margin-left: 0;
+        }
+
+       .home-text a {
+        margin-left: 40%;
+
+        &:hover {
+            background-color: rgb(158, 0, 0);
+        }
+       }
+
+   
+        
+
+
+}
