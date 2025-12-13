@@ -1,75 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <title>Hamburgueria</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <nav class="navegação">
-            <a href="#" class="logo">F<span>oo</span>D Ho<span>us</span>E</a>
+      <nav class="navegação">
+        <a href="#" class="logo">F<span>oo</span>D Ho<span>us</span>E</a>
 
-            <ul class="nav-list">
-                <li><a href="#" class="nav-item">Início</a></li>
-                <li><a href="#" class="nav-item">Cardápio</a></li>
-                <li><a href="#" class="nav-item">Sobre Nós</a></li>
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-item">Início</a></li>
+          <li><a href="#" class="nav-item">Cardápio</a></li>
+          <li><a href="#" class="nav-item">Sobre Nós</a></li>
+          <i class="fa-solid fa-cart-shopping" id="carrinho" function="alert('Abre a página do carrinho!')"></i>
+          <span id="carrinho-count">0</span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </ul>
 
-            </ul>
-
-            <i class="fa-solid fa-bars" id="botão-hamburguer"></i>
-
-        </nav>
+        <i class="fa-solid fa-bars" id="botão-hamburguer"></i>
+      </nav>
     </header>
 
     <main>
-        <section class="home">
+      <section class="home">
+        <div class="home-text">
+          <h4>SABORES IMPERDÍVEIS!</h4>
+          <h1><span>FooD HousE Hamburgueria 100%</span> ARTESANAL</h1>
+          <p>
+            Servir o melhor hambúrguer é o nosso trabalho. Ser o seu melhor
+            momento é a nossa missão.
+          </p>
 
-            <div class="home-text">
-                <h4>SABORES IMPERDÍVEIS!</h4>
-                <H1><span>FooD  HousE Hamburgueria 100%</span> ARTESANAL</H1>
-                <p>Servir o melhor hambúrguer é o nosso trabalho. Ser o seu melhor momento é a nossa missão.</p>
+          <a href="#" class="botão-compre">COMPRE JÁ</a>
+        </div>
 
-                <a href="#" class="botão-compre">COMPRE JÁ</a>
+        <div class="home-image">
+          <img
+            src="imagens/vecteezy_hamburger-with_25063642.png"
+            alt="Hamburguer"
+          />
+        </div>
+      </section>
 
-            </div>
+      <section class="produtos">
+        <h1>Produtos</h1>
+        <div class="produtos-container">
+             <div class="produto" id="1">
+            <img
+              src="https://png.pngtree.com/png-vector/20231213/ourmid/pngtree-hamburger-three-layer-big-mac-ai-element-three-dimensional-buckle-free-png-image_11327583.png"
+              alt="Hamburguer"  
+            />
+            <h2>BIG MAC</h2>
+            <p>O sabor que só o Big Mac tem! Com dois hambúrgueres suculentos e o exclusivo Molho Especial.</p>
 
-            <div class="home-image">
+            <p class="preço">R$ 39,99</p>
 
-                <img src="imagens/vecteezy_hamburger-with_25063642.png" alt="Hamburguer">
+            <a href="#" class="botão-compre">Comprar</a>
+          </div>
 
+          <div class="produto" id="2">
+            <img
+              src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-classic-burger-png-image_13354260.png"
+              alt="Hamburguer"  
+            />
+            <h2>O CLASSICO </h2>
+            <p>O sabor mais classico e delicioso do mundo! Com o hambúrguer com a carne e o molho.</p>
 
-            </div>
-        </section>
+            <p class="preço">R$ 32,98</p>
+
+            <a href="#" class="botão-compre">Comprar</a>
+          </div>
+
+          <div class="produto" id="3">
+            <img
+              src="https://bobs.com.br/media/filer_public_thumbnails/filer_public/c7/02/c70265d9-81dc-4b62-9b3c-0f9a5e114f91/cards_salad_x400.png__800x400_subsampling-2.png"
+              alt="Hamburguer"  
+            />
+            <h2>X-SALADA</h2>
+            <p>O sabor com uma salada especial, especialmente para as pessoas mais saudáveis!</p>
+
+            <p class="preço">R$ 35,99</p>
+
+            <a href="#" class="botão-compre">Comprar</a>
+          </div>
+
+          <div class="produto" id="4">
+            <img
+              src="https://estilocafeina.com.br/wp-content/uploads/2025/04/Super-Cheddar-McMelt-Bacon.png"
+              alt="Hamburguer"  
+            />
+            <h2>CHEDDAR</h2>
+            <p>Se você ama queijo, este é o seu lanche. Carne suculenta, cebola grelhada e uma cascata de Cheddar cremoso e intenso que domina a mordida.</p>
+
+            <p class="preço">R$ 34,99</p>
+
+            <a href="#" class="botão-compre">Comprar</a>
+          </div>
+         
+      </section>
     </main>
 
-
     <footer>
-        <div class="sobre">
-            <h1>SOBRE NÓS</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est eius sapiente id praesentium ab. Ab odio, corrupti nobis possimus facere eveniet voluptatum tempora, earum maiores vel exercitationem? Et, asperiores provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi commodi eius ipsa nisi maxime maiores mollitia fuga ratione nesciunt odio? Mollitia inventore eaque consectetur quod in hic ad illo veniam!</p>
-        </div>
+      <div class="sobre">
+        <h1>SOBRE NÓS</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est eius
+          sapiente id praesentium ab. Ab odio, corrupti nobis possimus facere
+          eveniet voluptatum tempora, earum maiores vel exercitationem? Et,
+          asperiores provident. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Excepturi commodi eius ipsa nisi maxime maiores
+          mollitia fuga ratione nesciunt odio? Mollitia inventore eaque
+          consectetur quod in hic ad illo veniam!
+        </p>
+      </div>
 
-        <div class="termos">
-
-            <ul>
-                <li><a href="#">Termos e Condições</a></li>
-                <li><a href="#">Entre com Contato</a></li>
-                <li><a href="#">Trabalhe Conosco</a></li>
-                <li><a href="#">Suporte</a></li>
-            
-            
-            
-            </ul>
-        </div>
+      <div class="termos">
+        <ul>
+          <li><a href="#">Termos e Condições</a></li>
+          <li><a href="#">Entre com Contato</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </div>
     </footer>
-    
-
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
