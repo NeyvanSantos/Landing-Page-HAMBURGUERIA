@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imagens/Favicon FH.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -19,8 +20,10 @@
           <li><a href="#" class="nav-item">Início</a></li>
           <li><a href="#" class="nav-item">Cardápio</a></li>
           <li><a href="#" class="nav-item">Sobre Nós</a></li>
-          <i class="fa-solid fa-cart-shopping" id="carrinho" function="alert('Abre a página do carrinho!')"></i>
-          <span id="carrinho-count">0</span>
+          <a href="carrinho.html" class="cart-link">
+            <i class="fa-solid fa-cart-shopping" id="carrinho"></i>
+            <span id="carrinho-count">0</span>
+          </a>
           <i class="fa-solid fa-magnifying-glass"></i>
         </ul>
 
@@ -38,94 +41,130 @@
             momento é a nossa missão.
           </p>
 
-          <a href="#" class="botão-compre">COMPRE JÁ</a>
+          <a href="#" class="botão-home"> --> CARDÁPIO <-- </a>
         </div>
 
         <div class="home-image">
-          <img
-            src="imagens/vecteezy_hamburger-with_25063642.png"
-            alt="Hamburguer"
-          />
+          <img src="imagens/Hamburguer-home.png" alt="Hamburguer" />
         </div>
       </section>
 
       <section class="produtos">
         <h1>Produtos</h1>
         <div class="produtos-container">
-             <div class="produto" id="1">
-            <img
-              src="https://png.pngtree.com/png-vector/20231213/ourmid/pngtree-hamburger-three-layer-big-mac-ai-element-three-dimensional-buckle-free-png-image_11327583.png"
-              alt="Hamburguer"  
-            />
-            <h2>BIG MAC</h2>
-            <p>O sabor que só o Big Mac tem! Com dois hambúrgueres suculentos e o exclusivo Molho Especial.</p>
+          <div class="produto" id="1">
+            <img src="imagens/Big-mac fake.png" alt="Hamburguer" />
+            <h2>Double Smash King</h2>
+            <p>
+              Dois hambúrgueres smash ultra suculentos, abraçados por queijo
+              derretendo em cada camada e nosso molho secreto. Um gigante para
+              quem tem fome de verdade.
+            </p>
 
             <p class="preço">R$ 39,99</p>
 
-            <a href="#" class="botão-compre">Comprar</a>
+            <a href="#" class="botão-compre">Adicionar ao Carrinho</a>
           </div>
 
           <div class="produto" id="2">
-            <img
-              src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-classic-burger-png-image_13354260.png"
-              alt="Hamburguer"  
-            />
-            <h2>O CLASSICO </h2>
-            <p>O sabor mais classico e delicioso do mundo! Com o hambúrguer com a carne e o molho.</p>
+            <img src="imagens/Classico-fake.png" alt="Hamburguer" />
+            <h2>Prime Original</h2>
+            <p>
+              A perfeição do simples. Carne Angus grelhada no fogo, queijo prato
+              maturado e salada fresca colhida no dia, servidos no pão brioche
+              selado na manteiga.
+            </p>
 
             <p class="preço">R$ 32,98</p>
 
-            <a href="#" class="botão-compre">Comprar</a>
+            <a href="#" class="botão-compre">Adicionar ao Carrinho</a>
           </div>
 
           <div class="produto" id="3">
-            <img
-              src="https://bobs.com.br/media/filer_public_thumbnails/filer_public/c7/02/c70265d9-81dc-4b62-9b3c-0f9a5e114f91/cards_salad_x400.png__800x400_subsampling-2.png"
-              alt="Hamburguer"  
-            />
-            <h2>X-SALADA</h2>
-            <p>O sabor com uma salada especial, especialmente para as pessoas mais saudáveis!</p>
-
+            <img src="imagens/x-salada.png" alt="Hamburguer" />
+            <h2>Green Valley</h2>
+            <p>
+              Leveza e sabor em equilíbrio. Blend de carnes nobres coberto por
+              alface americana crocante, tomate caqui e uma maionese de ervas
+              finas que traz frescor a cada mordida.
+            </p>
             <p class="preço">R$ 35,99</p>
 
-            <a href="#" class="botão-compre">Comprar</a>
+            <a href="#" class="botão-compre">Adicionar ao Carrinho</a>
           </div>
 
           <div class="produto" id="4">
-            <img
-              src="https://estilocafeina.com.br/wp-content/uploads/2025/04/Super-Cheddar-McMelt-Bacon.png"
-              alt="Hamburguer"  
-            />
-            <h2>CHEDDAR</h2>
-            <p>Se você ama queijo, este é o seu lanche. Carne suculenta, cebola grelhada e uma cascata de Cheddar cremoso e intenso que domina a mordida.</p>
+            <img src="imagens/Hamburguer-cheddar.png" alt="Hamburguer" />
+            <h2>Cheddar Volcano</h2>
+            <p>
+              Para os amantes de intensidade. Uma cascata de creme de cheddar
+              exclusivo, finalizada com cubos de bacon crocante caramelizado e
+              cebolas ao shoyu no pão australiano.
+            </p>
 
             <p class="preço">R$ 34,99</p>
 
-            <a href="#" class="botão-compre">Comprar</a>
+            <a href="#" class="botão-compre">Adicionar ao Carrinho</a>
           </div>
-         
+
+          <h1>Bebidas</h1>
+          <div class="produtos-container">
+            <div class="produto">
+              <div class="img-container">
+                <img src="imagens/coca-removebg-preview.png" alt="Coca" />
+              </div>
+              <h2>Coca-cola 350ml</h2>
+              <p class="preço">R$ 6,50</p>
+              <a href="#" class="botão-compre">Adicionar ao Carrinho</a>
+            </div>
+
+            <div class="produto">
+              <div class="img-container">
+                <img src="imagens/fanta.png" alt="Fanta" />
+              </div>
+              <h2>Fanta 350ml</h2>
+              <p class="preço">R$ 6,50</p>
+              <a href="#" class="botão-compre">Adicionar ao Carrinho</a>
+            </div>
+
+            <div class="produto">
+              <div class="img-container">
+                <img src="imagens/guarana-novo.png" alt="Guaraná" />
+              </div>
+              <h2>Guaraná 350ml</h2>
+              <p class="preço">R$ 6,50</p>
+              <a href="#" class="botão-compre">Adicionar ao Carrinho</a>
+            </div>
+
+            <div class="produto">
+              <div class="img-container">
+                <img src="imagens/pepsi.png" alt="Pepsi" />
+              </div>
+              <h2>Pepsi 350ml</h2>
+              <p class="preço">R$ 6,50</p>
+              <a href="#" class="botão-compre">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
       <div class="logo">
-         <a href="#" class="logo">F<span>oo</span>D Ho<span>us</span>E</a>
-    </div>
+        <a href="#" class="logo">F<span>oo</span>D Ho<span>us</span>E</a>
+      </div>
 
-    <div class="Loja">
+      <div class="Loja">
         <h3>Loja</h3>
         <ul>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Faça uma Compra</a></li>
-            <li><a href="#">Entre em Contato</a></li>
-            <li><a href="#">Reclamações</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Faça uma Compra</a></li>
+          <li><a href="#">Entre em Contato</a></li>
+          <li><a href="#">Reclamações</a></li>
         </ul>
-
-
-    </div>
+      </div>
 
       <div class="termos">
-
         <h3>Termos e Condições</h3>
         <ul>
           <li><a href="#">Termos e Condições</a></li>
@@ -134,8 +173,26 @@
           <li><a href="#">Suporte</a></li>
         </ul>
       </div>
+
+      <div class="formas">
+        <h3>Formas de Pagamento</h3>
+        <ul>
+          <li><i class="fa-brands fa-cc-mastercard"></i></li>
+          <li><i class="fa-brands fa-pix"></i></li>
+
+          <li><i class="fa-brands fa-cc-visa"></i></li>
+        </ul>
+      </div>
     </footer>
 
     <script src="script.js"></script>
+
+    <div id="alerta-customizado" class="alerta-container">
+      <div class="alerta-conteudo">
+        <div class="alerta-logo">F<span>oo</span>D Ho<span>us</span>E</div>
+        <p id="alerta-mensagem">Produto adicionado!</p>
+        <div class="barra-progresso"></div>
+      </div>
+    </div>
   </body>
 </html>
